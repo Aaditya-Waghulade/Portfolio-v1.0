@@ -1,5 +1,5 @@
 # Portfolio-v1.0
-![github-cover](https://github.com/aadu76/Portholio-v1.0/public/gitcover)
+![github-cover](https://drive.google.com/file/d/1EJ3ixo6gS7fJrMx-A_ebWPksrio52jcO/view?usp=drive_link)
 This is my personal portfolio website purely build on React , Javascript , Figma , Framer Motion and SASS.
 I have Used Tech-Stack like 
 Javascript | React | SASS 
