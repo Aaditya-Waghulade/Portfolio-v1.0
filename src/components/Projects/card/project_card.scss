@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.project_card{
+    height: 22rem;
+    width: 40rem;
+    background-color: rgba(207, 207, 220, 0.437);
+    border-radius: 1rem;
+backdrop-filter:blur(12px);
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-between;
+.left{
+width: 30vh;
+position: relative;
+left: -11rem;
+top: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 1;
+
+    .info{
+height: 13rem;
+width: 19.5vw;
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+p{
+    color:rgb(93, 92, 92) ;
+    line-height: 1.3;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: .85rem;
+}
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        position: relative;
+        left: -4rem;
+        top: -2rem;
+        padding: 1rem;
+        
+        p{
+            color: rgb(82, 86, 86);
+        }
+        a{
+
+        }
+    }
+    .techstack{
+display: flex;
+flex-direction: row;
+position: relative;
+left: -3rem;
+padding-bottom: 2rem;
+gap: 9px;
+img{
+height: 2rem;
+}
+    }
+}
+.right{
+
+    height: 100vh;
+display: flex;
+width: 30vw;
+align-items: center;
+position: relative;
+right: -16rem;
+top: -14rem;
+
+    img{
+        z-index: -9;
+        transition: transform .5s;
+        height: 10rem;
+        flex-wrap: wrap;
+border-radius: .5rem;
+box-shadow: -6px -5px 5px gray;
+        scale: 1.5;
+height: 15vh;
+width: 13vw;
+cursor:grab;
+    }
+}
+.right img:hover{
+    transform: scale(1.05) rotate(5deg); 
+    padding: .3rem;
+    border-radius: .5rem;
+    z-index: 999;
+}
+}
+
+@media (max-width:600px) {
+    .project_card{
+        height: 20rem;
+    width: 88vw;
+display: flex;
+flex-direction: column;
+border: 4px solid white;
+    .left{
+        width: 100vw;
+        position: relative;
+        left: 0.5rem;
+        .info{
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+           h3{
+
+            font-weight:400;
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-left: 0rem;
+           }
+           p{
+            color:rgb(93, 93, 93) ;
+            line-height: 1.8;
+
+            font-size: .7rem;
+           }
+        }
+        .links{
+position: relative;
+top: -3.4rem;
+left: -5rem;
+            padding: 0;
+            p{
+                color:rgb(101, 98, 98);
+                font-size: 13px;
+            }
+            a{
+                
+            }
+        }
+        .techstack {
+         position: absolute;
+         top: 12rem;
+         left: 3rem;
+
+         }
+    }
+    .right{
+        display: none;
+    }
+    }
+}

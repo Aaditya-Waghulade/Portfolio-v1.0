@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+.app {
+	height: 1000rem;
+}
+
+html{
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.emptyspace{
+  height: 5rem;
+  width: .4rem;
+  border-radius: 200px;
+  background-color: rgba(213, 213, 213, 0.652);
+  position: relative;
+  left: 45rem;
+  top: -5rem;
+}
+@media (max-width:600px)  {
+  .emptyspace{
+    display: none;
+  }
+  .scale-in-center{
+
+    .menu_for_mobile{
+      color: rgb(110, 109, 109);
+      font-size: 3rem;
+      display: flex;
+      .nav{
+     
+li{
+  .btn{
+padding: .5rem;
+
+  }
+}
+      }
+  }
+} }
+/*
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+  
+
+.menu_for_mobile{
+font-size: 10rem;
+  color: rgb(165, 159, 159);
+height: 20vh;
+display: flex;
+flex-direction: column;
+width: 35vw;
+padding-left: 2rem;
+position: fixed;
+display: none;
+.nav{
+  padding-top: 2rem;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+background-color: rgba(189, 197, 212, 0.55);
+
+
+li{
+ 
+  display:inline-block;
+  font-weight: 400;
+  padding: .4rem;
+  display: flex;
+  justify-content: center;
+align-items: center;
+
+width: 100%;
+height: 100%;
+.btn{
+  background-color: rgb(22, 25, 202);
+  padding: 1rem;
+  color: white;
+  transition: .1s ease-in;
+&:hover{
+  background-color: rgb(244, 244, 249);
+  color: rgb(22, 25, 202);
+  border: 2px solid  rgb(22, 25, 202);
+}
+}
+
+a{
+  text-decoration: none;
+  font-size: .9rem;
+color: rgb(10, 9, 9);
+font-weight: 400;
+  transition: .2s ease-in;
+  &:hover{
+    color: rgb(47, 63, 152);
+    background-color: rgba(255, 255, 255, 0.949);
+    font-weight: 700;
+    padding: .5rem;
+
+  }
+
+}
+}
+}
+}

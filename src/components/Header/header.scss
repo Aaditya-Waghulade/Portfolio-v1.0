@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+  z-index: -10;
+
+  .nav {
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 40vw;
+    left: 28rem;
+    top:2rem;
+    background-color: #bdd7f8b6;
+    padding: .7vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    z-index: 99999;
+
+    li {
+      display: inline;
+      font-weight: 400;
+      padding: 0.8rem;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+
+    }
+
+    a:hover {
+      padding: 1.2rem;
+      background-color: white;
+      color: black;
+      border-radius: 200px;
+      transition: .1s ease-out;
+      font-weight: bold;
+
+    }
+  }
+
+  .tracking-in-contract {
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+    z-index: 999;
+    color: black;
+
+    h3 {
+      font-size: 3rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: normal;
+      position: relative;
+      left: -5rem;
+
+    }
+
+    h1 {
+      text-shadow: 2px 2px 25px rgb(33, 131, 243);
+      transition: 1s ease-in;
+      font-size: 10rem;
+      margin-top: 20px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bolder;
+      z-index: 9999999;
+    }
+
+    h1:hover {
+
+      animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    span {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.2rem;
+    }
+  }
+
+  .direct_links {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    gap: 1rem;
+    top: -21.3rem;
+    left: 22rem;
+
+  }
+
+  .buttons {
+    position: relative;
+    gap: 1rem;
+    top: 29rem;
+    right: 40rem;
+   
+
+    .contact a {
+      padding: .6rem;
+      background-color: rgb(22, 25, 202);
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 3px 4px 10px rgba(95, 95, 96, 0.378);
+    }
+    a:hover{
+      color:  rgb(22, 25, 202);
+      background-color: white;
+      border: 2px solid  rgb(22, 25, 202);
+      transition: .3s ease-in;
+      font-weight: bolder;
+      box-shadow: 2px 2px  1px blue;
+    }
+  }
+
+  details{
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width:600px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+
+
+    .nav {
+     display: none;
+
+      li {
+        font-size: 13px;
+padding: 0;
+
+
+        a {
+          color: black;
+          text-decoration: none;
+padding: 9.5px;
+        }
+
+        a:hover {
+
+          background-color: white;
+          color: black;
+          padding:10px ;
+          border-radius: 4px;
+          border: 1px solid rgb(11, 11, 11);
+          font-weight: bold;
+
+        }
+      }
+    }
+
+    .tracking-in-contract {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+      h3{
+        font-size: 15px;
+position: relative;
+      }
+      h1{
+        font-size: 55px;
+      }
+span{
+  font-size: 12px;
+
+}
+    }
+
+    .direct_links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 1rem;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      left: 1rem;
+    }
+
+    .buttons {
+      display: none;
+     
+    }
+  
+  
+  
+  
+  }
+
+
+}
+
+
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .6;
+  }
+
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+
+@keyframes h1 {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .6;
+  }
+
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.contact{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+padding: 7rem;
+    font-family: "Poppins", sans-serif;
+    .circle1{
+        background: #fed8d3;
+        position: absolute;
+        top: 315rem;
+        right: 5rem;
+        border-radius: 100%;
+        z-index: -9;
+        height: 35rem;
+        width: 35rem;
+        filter:blur(14rem);
+     }
+     .circle2{
+        
+        background: #d8fbfd;
+        position: absolute;
+top:315rem;
+        left: 7rem; 
+        height: 35rem;
+        width:35rem;
+      border-radius: 100%;
+      z-index: -9;
+      filter:blur(14rem);
+      }
+
+h1{
+    font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-size: 3rem;
+}
+    .infos{
+height: 100%;
+display: flex;
+align-items: center;
+
+flex-direction: column;
+justify-content:space-between;
+p{
+    font-size: 1.8rem;
+    padding: 10rem;
+    color: rgb(70, 73, 73);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: rgb(22, 25, 202);
+    padding: 1rem;
+    transition: .1s ease-in;
+    box-shadow: 3px 6px 10px rgba(10, 10, 10, 0.378);
+&:hover{
+    background-color: rgb(244, 244, 249);
+    color: rgb(22, 25, 202);
+    border: 2px solid  rgb(22, 25, 202);
+    box-shadow: 2px 6px  1px blue;
+}
+}
+    }
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+        padding: .5rem;
+        img{
+            width: 2.4vw;
+            padding-right: 1rem;
+        }
+        p{
+            color: rgb(100, 92, 92);
+        }
+    }
+}
+@media (max-width:600px) {
+    .contact{
+padding: 2rem;
+.circle1{
+    display: none;
+}
+.circle2{
+display: none;        
+}
+
+
+h1{
+    font-size: 2rem;
+}
+.infos{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 3rem;
+
+    p{
+        font-size: 1rem;
+padding: 2rem;
+
+    }
+   
+    }
+    .footer{
+        img{
+            width: 2rem;
+        }
+        p{
+            font-size: .7rem;
+        }
+
+
+    }
+}
+    }
